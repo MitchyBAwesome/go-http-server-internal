@@ -1,16 +1,13 @@
 # CICD Lunch and Learn
 
-## Creating a CodeCommit Repo
+### Existing Repo 
+
+1. Gu
+
+### Creating a CodeCommit Repo
 
 1. Create CodeCommit Repository called "hello-world"
-
-```
-# Initialise my workspace as a git tracked repo
-git init
-
-# Add the dockerfile and the main.go
-git add .
-
-# Do an initial commit
-git commit -m 'initial commit'
-```
+    - Check Git Version 1.7.9.
+    - Generate Git credentials.
+    - Clone the Repo
+2. C
