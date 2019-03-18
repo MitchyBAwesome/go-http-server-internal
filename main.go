@@ -1,20 +1,20 @@
 package main
 
 import (
- "log"
- "net/http"
+	"log"
+	"net/http"
 
- "github.com/gorilla/mux"
+	"github.com/gorilla/mux"
 )
 
 func YourHandler(w http.ResponseWriter, r *http.Request) {
- w.Write([]byte("<h1>Hello Qantas Team!</h1>\n"))
+	w.Write([]byte("<h1>Hello Qantas Team!</h1>\n"))
 }
 
 func main() {
- r := mux.NewRouter()
+	r := mux.NewRouter()
 
- r.HandleFunc("/", YourHandler)
+	r.HandleFunc("/", YourHandler)
 
- log.Fatal(http.ListenAndServe(":8000", r))
+	log.Fatal(http.ListenAndServe(":80", r))
 }
