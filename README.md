@@ -1,14 +1,26 @@
 # CICD Lunch and Learn
 
 1. Simple Hello World App
-2. Run Simple Hello World App in Docker (Explain Docker File)
+
+2. Run Simple Hello World App in Docker:
+    - Dockerfile Basics (Imperative set of commands)
+        - FROM
+        - RUN
+        - ADD / COPY
+        - CMD
+
 3. Push Simple Hello World App to Source Control
     - Show Git
     - Create Repo
     - Add Remote
-    - 
-4. Deploy Simple Hello World App to running ECS Cluster.
-5. 
+
+**Now We Need Somewhere to Run This**
+
+4. Create an ECS Cluster and a placeholder Service
+
+5. Deploy Simple Hello World App to running ECS Cluster.
+
+6. Do a Deployment.
 
 ### It all starts with Source Code
 1. Simple Web App
@@ -56,3 +68,5 @@
         - Choose a Branch
     - AWS CodeCommit
 3. Setup a Build Provider
+
+"imagedefinitions.json"
