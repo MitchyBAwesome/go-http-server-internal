@@ -1,0 +1,24 @@
+{
+    "family": "lendlease-cats", 
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::614658524125:role/ecsTaskExecutionRole", 
+    "containerDefinitions": [
+        {
+            "name": "lendlease-cats", 
+            "image": "<IMAGE>", 
+            "portMappings": [
+                {
+                    "containerPort": 80, 
+                    "hostPort": 80, 
+                    "protocol": "tcp"
+                }
+            ], 
+            "essential": true
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "512"
+}
