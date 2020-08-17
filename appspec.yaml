@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-southeast-2:614658524125:task-definition/lendlease-cats"
+        TaskDefinition: "arn:aws:ecs:ap-southeast-2:614658524125:task-definition/ll2demoPipelineStackMyFargateServiceTaskDef8D2B806A"
         LoadBalancerInfo:
-          ContainerName: "lendlease-cats"
+          ContainerName: "web"
           ContainerPort: 80
