@@ -1,20 +1,21 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
-
-	"github.com/gorilla/mux"
+	"os"
 )
 
-func YourHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("<h1>Hello Qantas Team!</h1>\n"))
-}
+// Port constant for service
+const Port = "80"
 
 func main() {
-	r := mux.NewRouter()
-
-	r.HandleFunc("/", YourHandler)
-
-	log.Fatal(http.ListenAndServe(":80", r))
+	http.HandleFunc("/", sendGopher)
+	log.Fatal(http.ListenAndServe(":"+Port, nil))
 }
+
+func sendGopher(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "DoT API version 1.0\n")
+}
+
