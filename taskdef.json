@@ -1,10 +1,10 @@
 {
-    "family": "ll2demoPipelineStackMyFargateServiceTaskDef8D2B806A", 
+    "family": "dot-internal-api", 
     "networkMode": "awsvpc",
     "executionRoleArn": "arn:aws:iam::614658524125:role/ecsTaskExecutionRole", 
     "containerDefinitions": [
         {
-            "name": "web", 
+            "name": "container", 
             "image": "<IMAGE>", 
             "portMappings": [
                 {
