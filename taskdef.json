@@ -1,10 +1,10 @@
 {
-    "family": "lendlease-cats", 
+    "family": "ll2demoPipelineStackMyFargateServiceTaskDef8D2B806A", 
     "networkMode": "awsvpc",
     "executionRoleArn": "arn:aws:iam::614658524125:role/ecsTaskExecutionRole", 
     "containerDefinitions": [
         {
-            "name": "lendlease-cats", 
+            "name": "web", 
             "image": "<IMAGE>", 
             "portMappings": [
                 {
