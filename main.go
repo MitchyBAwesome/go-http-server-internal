@@ -15,6 +15,6 @@ func main() {
 }
 
 func sendGopher(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "DoT API version 1.0 - internal\n")
+	fmt.Fprintf(w, "DoT API version 2.0 - internal\n")
 }
 
